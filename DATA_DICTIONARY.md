@@ -49,8 +49,8 @@ The full 872-paper bibliometric corpus enriched with OpenAlex metadata.
 
 | File | Format | Description |
 |------|--------|-------------|
-| `author_network.gexf` | GEXF (Gephi) | Co-authorship network (2,526 nodes) |
-| `network.gexf` | GEXF (Gephi) | Keyword co-occurrence network |
+| `author_network.gexf` | GEXF (VOSviewer) | Co-authorship network (2,526 nodes) |
+| `network.gexf` | GEXF (VOSviewer) | Keyword co-occurrence network |
 
 ## data/paper-ready/
 

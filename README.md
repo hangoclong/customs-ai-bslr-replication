@@ -29,7 +29,7 @@ The study presents a dual-stage bibliometric-systematic literature review (B-SLR
 │   ├── corpus/          # Full 872-paper bibliometric dataset
 │   ├── clusters/        # Leiden cluster assignments (L1/L2/L3)
 │   ├── analysis/        # Bibliometric coupling, gap detection, keyword bursts
-│   ├── networks/        # GEXF network files (Gephi-compatible)
+│   ├── networks/        # GEXF network files (VOSviewer-compatible)
 │   └── paper-ready/     # Aggregated tables directly backing manuscript claims
 ├── appendix/            # Tables A-I and A-II as machine-readable CSVs
 ├── figures/             # All 11 manuscript figures (PNG)
@@ -54,10 +54,12 @@ The study presents a dual-stage bibliometric-systematic literature review (B-SLR
 
 ## Network Visualization
 
-The `data/networks/` directory contains GEXF files compatible with [Gephi](https://gephi.org/):
+The `data/networks/` directory contains GEXF files compatible with [VOSviewer](https://www.vosviewer.com/):
 
 - **`author_network.gexf`** — Co-authorship network (2,526 authors, 799 clusters)
 - **`network.gexf`** — Keyword co-occurrence network
+
+These networks can be opened directly in VOSviewer for interactive cluster exploration.
 
 ## Data Collection
 
@@ -72,7 +74,7 @@ The `data/networks/` directory contains GEXF files compatible with [Gephi](https
 1. The `data/corpus/dataset_a.csv` contains the full bibliometric corpus enriched with OpenAlex metadata
 2. Cluster assignments in `data/clusters/` were generated using the Leiden algorithm
 3. All figures in `figures/` were generated from the corresponding CSV files in `data/`
-4. Network files in `data/networks/` can be opened directly in Gephi for interactive exploration
+4. Network files in `data/networks/` can be opened directly in VOSviewer for interactive exploration
 
 ## License
 
