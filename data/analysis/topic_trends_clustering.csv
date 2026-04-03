@@ -1,0 +1,6 @@
+topic_id,topic_name,trend,z_score,p_value,slope,status,rank,relative_status
+0,"Intelligent Customs Compliance: Fraud Detection, HS Classification & Risk Analytics",UP,5.3,0.0,0.67,🔥 HOT,1,🔥 HOT
+1,"Trade Policy & Digital Governance: Regulatory Frameworks, Sustainability & Geopolitics",UP,4.04,0.0001,0.48,🔥 HOT,3,🔥 HOT
+2,"Predictive Analytics for Trade Operations: Forecasting, Maritime Logistics & Safety",UP,4.64,0.0,0.47,🔥 HOT,4,🔥 HOT
+3,"Blockchain-Enabled Supply Chain Transparency: Traceability, Smart Contracts & Trust",UP,4.01,0.0001,0.5,🔥 HOT,2,🔥 HOT
+4,"Cross-Border E-Commerce Platforms: Digital Trade, Market Intelligence & SME Growth",UP,4.05,0.0001,0.25,🔥 HOT,5,🔥 HOT

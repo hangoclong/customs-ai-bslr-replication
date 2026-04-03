@@ -1,0 +1,10 @@
+topic_id,topic_name,trend,z_score,p_value,slope,status,rank,relative_status
+0,blockchain,UP,4.31,0.0,0.27,🔥 HOT,1,🔥 HOT
+1,cross-border e-commerce,UP,4.29,0.0,0.11,🔥 HOT,4,🔥 HOT
+2,international trade,UP,4.2,0.0,0.15,🔥 HOT,3,🔥 HOT
+3,computer science,STABLE,1.62,0.105,0.06,→ STABLE,5,→ STABLE
+4,supply chain,UP,4.55,0.0,0.2,🔥 HOT,2,🔥 HOT
+5,business,UP,2.9,0.0037,0.0,🔥 HOT,6,🔥 HOT
+6,digitalization,UP,3.99,0.0001,0.0,🔥 HOT,7,🔥 HOT
+8,economics,INSUFFICIENT,0.0,1.0,,⚠️ INSUFFICIENT,0,⚠️ INSUFFICIENT
+9,e-commerce,UP,3.1,0.0019,0.0,🔥 HOT,8,🔥 HOT

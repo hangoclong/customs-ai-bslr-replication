@@ -1,0 +1,43 @@
+source_slice,source_theme,target_slice,target_theme,flow_weight,stability
+1996-2021,accounting; architecture; automation,2022-2023,association rules; bibliometric analysis; big data analytics,0.087,0.034
+1996-2021,accounting; architecture; automation,2022-2023,accounting; artificial intelligence; artificial neural network,0.537,0.293
+1996-2021,accounting; architecture; automation,2022-2023,attention mechanism; bert; covid-19,0.071,0.011
+1996-2021,accounting; architecture; automation,2022-2023,automation; customs administration; customs authorities,0.25,0.013
+1996-2021,big data; blockchain; case study,2022-2023,association rules; bibliometric analysis; big data analytics,0.32,0.127
+1996-2021,big data; blockchain; case study,2022-2023,accounting; artificial intelligence; artificial neural network,0.04,0.013
+1996-2021,big data; blockchain; case study,2022-2023,attention mechanism; bert; covid-19,0.071,0.026
+1996-2021,anomaly detection; artificial intelligence; artificial neural network,2022-2023,association rules; bibliometric analysis; big data analytics,0.125,0.045
+1996-2021,anomaly detection; artificial intelligence; artificial neural network,2022-2023,accounting; artificial intelligence; artificial neural network,0.167,0.054
+1996-2021,anomaly detection; artificial intelligence; artificial neural network,2022-2023,attention mechanism; bert; covid-19,0.071,0.027
+1996-2021,anomaly detection; artificial intelligence; artificial neural network,2022-2023,active learning; anomaly detection; customs fraud detection,0.333,0.071
+1996-2021,digital economy; digitalization; port logistics,2022-2023,association rules; bibliometric analysis; big data analytics,0.667,0.043
+1996-2021,customs; data analytics; value,2022-2023,association rules; bibliometric analysis; big data analytics,0.333,0.021
+1996-2021,exchange rate forecasting; neural network; supplier selection,2022-2023,attention mechanism; bert; covid-19,0.333,0.062
+1996-2021,sentiment analysis; standardization; text mining,2022-2023,attention mechanism; bert; covid-19,0.667,0.133
+1996-2021,cites; convolutional neural network; illegal logging,2022-2023,accounting; artificial intelligence; artificial neural network,0.333,0.018
+2022-2023,association rules; bibliometric analysis; big data analytics,2024-2025,automation; bibliometric analysis; big data,0.333,0.141
+2022-2023,association rules; bibliometric analysis; big data analytics,2024-2025,artificial intelligence; artificial neural network; credit evaluation,0.105,0.032
+2022-2023,association rules; bibliometric analysis; big data analytics,2024-2025,attention; belt and road initiative; cloud computing,0.294,0.086
+2022-2023,association rules; bibliometric analysis; big data analytics,2024-2025,air cargo; competitiveness; cross-border,0.222,0.067
+2022-2023,association rules; bibliometric analysis; big data analytics,2024-2025,blockchain technology applications and security; business; computer science,0.125,0.033
+2022-2023,association rules; bibliometric analysis; big data analytics,2024-2025,customs; customs control; digital trade,0.4,0.077
+2022-2023,association rules; bibliometric analysis; big data analytics,2024-2025,ai; barriers; cybersecurity,0.25,0.02
+2022-2023,accounting; artificial intelligence; artificial neural network,2024-2025,automation; bibliometric analysis; big data,0.111,0.038
+2022-2023,accounting; artificial intelligence; artificial neural network,2024-2025,artificial intelligence; artificial neural network; credit evaluation,0.158,0.043
+2022-2023,accounting; artificial intelligence; artificial neural network,2024-2025,attention; belt and road initiative; cloud computing,0.118,0.029
+2022-2023,accounting; artificial intelligence; artificial neural network,2024-2025,air cargo; competitiveness; cross-border,0.167,0.043
+2022-2023,accounting; artificial intelligence; artificial neural network,2024-2025,blockchain technology applications and security; business; computer science,0.5,0.129
+2022-2023,attention mechanism; bert; covid-19,2024-2025,automation; bibliometric analysis; big data,0.143,0.051
+2022-2023,attention mechanism; bert; covid-19,2024-2025,artificial intelligence; artificial neural network; credit evaluation,0.071,0.031
+2022-2023,attention mechanism; bert; covid-19,2024-2025,attention; belt and road initiative; cloud computing,0.071,0.033
+2022-2023,attention mechanism; bert; covid-19,2024-2025,attention mechanism; demand forecasting; forest products,0.5,0.125
+2022-2023,attention mechanism; bert; covid-19,2024-2025,export control; large language models; natural language processing,0.25,0.059
+2022-2023,bp neural network; customs clearance; export,2024-2025,air cargo; competitiveness; cross-border,0.167,0.043
+2022-2023,automation; customs administration; customs authorities,2024-2025,automation; bibliometric analysis; big data,0.25,0.033
+2024-2025,automation; bibliometric analysis; big data,2026-2026,blockchain; cross-border e-commerce; digitalization,0.4,0.067
+2024-2025,artificial intelligence; artificial neural network; credit evaluation,2026-2026,deep learning; digital transformation; esg,0.143,0.04
+2024-2025,attention; belt and road initiative; cloud computing,2026-2026,deep learning; digital transformation; esg,0.429,0.143
+2024-2025,attention; belt and road initiative; cloud computing,2026-2026,blockchain; cross-border e-commerce; digitalization,0.2,0.048
+2024-2025,air cargo; competitiveness; cross-border,2026-2026,blockchain; cross-border e-commerce; digitalization,0.2,0.045
+2024-2025,digitization; machine learning algorithm; predictive analysis,2026-2026,deep learning; digital transformation; esg,0.2,0.091
+2024-2025,export control; large language models; natural language processing,2026-2026,deep learning; digital transformation; esg,0.25,0.1

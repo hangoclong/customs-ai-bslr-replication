@@ -1,0 +1,74 @@
+time_slice,cluster_id,cluster_label,centrality,density,paper_count,keywords
+1996-2021,0,big data; blockchain; case study,280.0,3.84,86,big data; blockchain; case study; counterfeit; cross-border e-commerce; deep learning; digital technologies; digital transformation; distributed ledger; freight forwarding; hyperledger fabric; identification; information security; information system; iot; letter of credit; logistics; pharmaceutical supply chain; port operations; predictive analytics; smart contract; traceability; trade; trade facilitation; transportation
+1996-2021,1,anomaly detection; artificial intelligence; artificial neural network,269.0,5.541666666666667,64,anomaly detection; artificial intelligence; artificial neural network; business intelligence; cluster analysis; clustering; computer vision; container; cross-validation; customs risk; data mining; data science; data warehouse; database; decision tree; fraud detection; machine learning; mathematics; natural language processing; operating system; outlier; statistics; support vector machine; sustainability
+1996-2021,2,accounting; architecture; automation,488.0,21.41891891891892,107,accounting; architecture; automation; blockchain technology applications and security; business; china; code; commerce; commodity; competition; compliance; computer science; computer security; context; database transaction; decision support system; declaration; e-commerce; e-commerce and technology innovations; economic growth; economics; economy; embedded system; engineering; exchange rate; finance; financial system; flexibility; geography; global trade and economics; globalization; goods and services; government; industrial organization; information retrieval; information sharing; international trade; knowledge management; law; management; manufacturing engineering; marketing; microeconomics; money laundering; operations management; operations research; order; outsourcing; payment; political science; port; process; process management; product; production; psychology; quality; risk analysis; risk management; sample; service management; software engineering; supply chain; supply chain and inventory management; supply chain management; supply chain risk management; systems engineering; task; telecommunications; trade barriers; trade finance; work; world trade; world wide web
+1996-2021,3,marine transportation,1.0,0.0,2,marine transportation
+1996-2021,4,digital economy; digitalization; port logistics,20.0,0.6666666666666666,11,digital economy; digitalization; port logistics
+1996-2021,5,industry 4.0; sme,8.0,1.0,4,industry 4.0; sme
+1996-2021,6,customs; data analytics; value,24.0,1.6666666666666667,10,customs; data analytics; value
+1996-2021,7,big data analytics,7.0,0.0,3,big data analytics
+1996-2021,8,classification; harmonized system,5.0,0.5,5,classification; harmonized system
+1996-2021,9,text classification,3.0,0.0,2,text classification
+1996-2021,10,sentiment analysis; standardization; text mining,8.0,1.0,7,sentiment analysis; standardization; text mining
+1996-2021,11,hs codes; knowledge database,3.0,1.0,3,hs codes; knowledge database
+1996-2021,12,ontology,5.0,0.0,2,ontology
+1996-2021,13,digital trade,1.0,0.0,2,digital trade
+1996-2021,14,hs code,3.0,0.0,3,hs code
+1996-2021,15,expert system,6.0,0.0,3,expert system
+1996-2021,16,free trade agreement,4.0,0.0,2,free trade agreement
+1996-2021,17,national security,2.0,0.0,1,national security
+1996-2021,18,network analysis; product classification,3.0,0.5,3,network analysis; product classification
+1996-2021,19,recurrent neural network,1.0,0.0,2,recurrent neural network
+1996-2021,20,analytics,2.0,0.0,2,analytics
+1996-2021,21,random forest,6.0,0.0,3,random forest
+1996-2021,22,simulation,5.0,0.0,3,simulation
+1996-2021,23,design science; global supply chains,5.0,0.5,3,design science; global supply chains
+1996-2021,24,foreign trade,3.0,0.0,2,foreign trade
+1996-2021,25,dubai customs; hyperledger,6.0,0.5,3,dubai customs; hyperledger
+1996-2021,26,customs administration,3.0,0.0,3,customs administration
+1996-2021,27,risk assessment,4.0,0.0,4,risk assessment
+1996-2021,28,knn; svm,5.0,0.5,5,knn; svm
+1996-2021,29,lda,4.0,0.0,2,lda
+1996-2021,30,cites; convolutional neural network; illegal logging,11.0,1.0,5,cites; convolutional neural network; illegal logging
+1996-2021,31,exchange rate forecasting; neural network; supplier selection,7.0,0.6666666666666666,8,exchange rate forecasting; neural network; supplier selection
+1996-2021,32,bayesian networks; international shipping,9.0,0.5,3,bayesian networks; international shipping
+1996-2021,33,carbon emission,2.0,0.0,2,carbon emission
+1996-2021,34,feature extraction,1.0,0.0,2,feature extraction
+1996-2021,35,venezuela,2.0,0.0,1,venezuela
+1996-2021,36,cargo inspection,1.0,0.0,2,cargo inspection
+1996-2021,37,customs risk management; identification and evaluation,0.0,1.0,2,customs risk management; identification and evaluation
+1996-2021,38,bp neural network,1.0,0.0,4,bp neural network
+2022-2023,0,association rules; bibliometric analysis; big data analytics,290.0,4.413043478260869,137,association rules; bibliometric analysis; big data analytics; blockchain; computer vision; cross-border; cross-border e-commerce; customs; customs control; customs declaration; cybersecurity; deep learning; digital economy; digital platform; digital trade; digital transformation; digitalization; economic development; economic security; electronic commerce; global trade; governance; hyperledger fabric; industry 4.0; information and communication technologies; innovation; international trade; investment; machine learning; origin; pandemic; port supply chain; provenance; risk management; security; smart contract; smes; supply chain; supply chain management; sustainability; technology; traceability; trade facilitation; trade policy; transparency; vat
+2022-2023,1,accounting; artificial intelligence; artificial neural network,255.0,15.37037037037037,64,accounting; artificial intelligence; artificial neural network; big data; business; china; cloud computing; commerce; commodity; computer science; computer security; context; convolutional neural network; cryptocurrency; data mining; data science; database transaction; e-commerce; e-commerce and technology innovations; econometrics; economics; electronic business; engineering; finance; global supply chains; globalization; industrial organization; intellectual property; international trade law; internationalization; key; knowledge management; law; marketing; mode; multinational corporation; operations management; operations research; panel data; payment; political science; process; production; prosperity; quality; reinforcement learning; revenue; service; stock market forecasting methods; sustainable development; telecommunications; the internet; trade finance; world wide web
+2022-2023,2,attention mechanism; bert; covid-19,32.0,3.0714285714285716,20,attention mechanism; bert; covid-19; forecasting; logistics; lstm; natural language processing; neural network; nlp; sentiment analysis; shipping; text mining; time series; trade barriers
+2022-2023,3,active learning; anomaly detection; customs fraud detection,9.0,1.1666666666666667,9,active learning; anomaly detection; customs fraud detection; customs risk assessment; fraud detection; synthetic data generation
+2022-2023,4,bp neural network; customs clearance; export,14.0,1.0,9,bp neural network; customs clearance; export; image processing; import; prediction
+2022-2023,5,free trade port supply chain; stackelberg game,3.0,0.5,3,free trade port supply chain; stackelberg game
+2022-2023,6,automation; customs administration; customs authorities,15.0,2.25,3,automation; customs administration; customs authorities; federal customs service
+2024-2025,0,export control; large language models; natural language processing,12.0,1.25,10,export control; large language models; natural language processing; trade compliance
+2024-2025,1,automation; bibliometric analysis; big data,336.0,6.777777777777778,146,automation; bibliometric analysis; big data; blockchain; china; cross-border trade; customs procedures; decentralization; distributed ledger; foreign trade; global trade; international trade; internet of things; logistics; maritime transport; network optimization; risk management; security; smart contract; smart ports; stability; supply chain; supply chain management; trade barriers; trade finance; transaction efficiency; zero trust architecture
+2024-2025,2,bilstm; graph neural network; link prediction,17.0,0.75,8,bilstm; graph neural network; link prediction; text classification
+2024-2025,3,hs code; knowledge graph,6.0,0.5,3,hs code; knowledge graph
+2024-2025,4,artificial intelligence; artificial neural network; credit evaluation,148.0,3.1578947368421053,90,artificial intelligence; artificial neural network; credit evaluation; cryptography; customs fraud; customs risk management; data analysis; data analytics; data privacy; fuzzy logic; genetic algorithm; governance; international trade law; logistics efficiency; machine learning; neural network; optimization; statistical models; zero-knowledge proof
+2024-2025,5,digital economy; economic development; innovation,8.0,1.0,6,digital economy; economic development; innovation
+2024-2025,6,attention mechanism; demand forecasting; forest products,25.0,2.0,12,attention mechanism; demand forecasting; forest products; lstm
+2024-2025,7,customs; customs control; digital trade,35.0,1.6,20,customs; customs control; digital trade; f1; global value chains; international logistics; rcep; single window; supply chain resilience; trade facilitation
+2024-2025,8,attention; belt and road initiative; cloud computing,146.0,3.5294117647058822,87,attention; belt and road initiative; cloud computing; covid-19; cross-border e-commerce; deep learning; digital transformation; environmental sustainability; open innovation; regulatory compliance; reinforcement learning; resilience; smes; supply chain integration; supply chain optimization; sustainability; trade competitiveness
+2024-2025,9,blockchain technology applications and security; business; computer science,117.0,5.875,26,"blockchain technology applications and security; business; computer science; computer security; data science; economics; engineering; finance; game theory; international markets; law, logistics, and international trade; maritime supply chain; marketing; port; traceability; transparency"
+2024-2025,10,digitization; machine learning algorithm; predictive analysis,19.0,1.0,13,digitization; machine learning algorithm; predictive analysis; random forest; risk assessment
+2024-2025,11,air cargo; competitiveness; cross-border,97.0,2.2777777777777777,50,air cargo; competitiveness; cross-border; customs clearance; decision-making; digitalization; e-commerce; economy; gravity model; industry 4.0; information system; law; logistics performance; operational efficiency; sustainable development; technology; technology adoption; trade
+2024-2025,12,forecast; import; sarimax,9.0,1.0,5,forecast; import; sarimax; time series analysis
+2024-2025,13,ai; barriers; cybersecurity,30.0,0.75,12,ai; barriers; cybersecurity; logistics infrastructure
+2024-2025,14,data mining; logistic regression; support vector machine,11.0,0.6666666666666666,7,data mining; logistic regression; support vector machine
+2024-2025,15,cross-border dual-channel supply chain; stackelberg game; tax differences,15.0,2.0,4,cross-border dual-channel supply chain; stackelberg game; tax differences
+2024-2025,16,cross-border e-commerce supply chain; knowledge mapping; research trends,15.0,1.3333333333333333,4,cross-border e-commerce supply chain; knowledge mapping; research trends
+2024-2025,17,classification,3.0,0.0,3,classification
+2024-2025,18,cnn; convolutional neural network; edge computing,12.0,0.8,7,cnn; convolutional neural network; edge computing; logistics optimization; supply chain efficiency
+2024-2025,19,ai ethics; ai standards; digital divide,13.0,1.75,4,ai ethics; ai standards; digital divide; wto
+2024-2025,20,customs declaration,1.0,0.0,2,customs declaration
+2024-2025,21,fraud detection; model; prediction,14.0,1.0,9,fraud detection; model; prediction; sales forecasting
+2024-2025,22,data fusion; literature review; supply chain digitalization,8.0,0.6666666666666666,4,data fusion; literature review; supply chain digitalization
+2024-2025,23,trade costs,1.0,0.0,2,trade costs
+2024-2025,24,automatic identification system,2.0,0.0,2,automatic identification system
+2026-2026,0,deep learning; digital transformation; esg,1.0,1.2857142857142858,12,deep learning; digital transformation; esg; large language models; machine learning; random forest; sustainability
+2026-2026,1,blockchain; cross-border e-commerce; digitalization,1.0,1.0,10,blockchain; cross-border e-commerce; digitalization; knowledge graph; risk management

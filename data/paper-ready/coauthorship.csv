@@ -1,0 +1,8 @@
+metric,value
+total_authors,2526.0
+total_collaborations,4105.0
+avg_authors_per_paper,3.04
+single_author_papers,183.0
+collaboration_clusters,799.0
+largest_cluster_size,39.0
+avg_collaborators_per_author,3.25

@@ -1,0 +1,8 @@
+time_slice,cluster_id,cluster_label,centrality,density,paper_count,keywords
+1996-2021,0,data; customs; risk; trade; based,0.9738,0.8572,159,data; customs; risk; trade; based
+1996-2021,1,blockchain; supply; chain; trade; customs,0.9738,0.8826,119,blockchain; supply; chain; trade; customs
+2022-2023,0,blockchain; trade; supply; digital; commerce,0.9738,0.9014,100,blockchain; trade; supply; digital; commerce
+2022-2023,1,customs; model; risk; data; trade,0.9738,0.8794,93,customs; model; risk; data; trade
+2024-2025,0,trade; blockchain; digital; ai; cross,0.9807,0.895,194,trade; blockchain; digital; ai; cross
+2024-2025,1,trade; model; data; commerce; border,0.9807,0.8842,170,trade; model; data; commerce; border
+2026-2026,0,customs; trade; supply; risk; ai,0.0,0.8833,37,customs; trade; supply; risk; ai

@@ -1,0 +1,16 @@
+# Scopus Search String (SPICE Framework)
+# Database: Scopus
+# Date: January 2026
+# Fields: TITLE-ABS-KEY
+# Document types: ar (article), cp (conference paper), re (review)
+# Language: English
+
+TITLE-ABS-KEY(
+  ("customs administration" OR "customs clearance" OR "customs compliance" OR "customs fraud" OR "customs inspection" OR "customs valuation" OR "customs declaration" OR "customs control" OR "customs procedures" OR "customs duties" OR "customs revenue" OR "customs risk" OR "customs digitalization" OR "e-customs" OR "international trade" OR "import declaration" OR "cross-border trade" OR "cross-border e-commerce" OR "trade facilitation" OR "single window" OR "tariff classification" OR "HS code" OR "harmonized system" OR "harmonised system" OR "authorized economic operator" OR "export control")
+  AND
+  ("artificial intelligence" OR "machine learning" OR "deep learning" OR "neural network" OR "natural language processing" OR "NLP" OR "generative AI" OR "LLM" OR "large language model*" OR "text mining" OR "text classification" OR "BERT" OR "GPT" OR "transformer" OR "random forest" OR "XGBoost" OR "LSTM" OR "blockchain" OR "smart contract" OR "digitalization" OR "digital transformation" OR "automation" OR "data mining" OR "data analytics" OR "computer vision" OR "predictive analytics" OR "knowledge graph" OR "graph neural network" OR "contrastive learning")
+  AND
+  ("risk" OR "audit" OR "compliance" OR "fraud" OR "classification" OR "detection" OR "inspection" OR "tariff" OR "valuation" OR "declaration" OR "supply chain" OR "cargo" OR "smuggling" OR "regulatory" OR "governance")
+)
+AND DOCTYPE(ar OR cp OR re)
+AND LANGUAGE(english)

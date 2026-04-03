@@ -1,0 +1,21 @@
+rank,journal,paper_count,total_citations,avg_citations,top_keywords
+1,ACM International Conference Proceeding Series,20,56,2.8,machine learning; blockchain; supply chain
+2,Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics),18,90,5.0,blockchain; smart contract; data mining
+3,Lecture Notes in Networks and Systems,16,13,0.81,digitalization; machine learning; blockchain
+4,World Customs Journal,14,61,4.36,business; computer science; artificial intelligence
+5,Sustainability (Switzerland),13,325,25.0,digitalization; digital transformation; blockchain
+6,Global Trade and Customs Journal,12,32,2.67,digitalization; customs; customs clearance
+7,Communications in Computer and Information Science,10,21,2.1,blockchain; risk assessment; customs nomenclature classification
+8,Proceedings of SPIE - The International Society for Optical Engineering,9,13,1.44,forecast; free trade area; lstm-gru
+9,Applied Mathematics and Nonlinear Sciences,9,19,2.11,cross-border e-commerce; agglomeration effect; financial activities
+10,Computers and Industrial Engineering,8,328,41.0,blockchain; agility; dry port-seaport logistics
+11,Journal of Physics: Conference Series,8,26,3.25,computer science; business; process
+12,IEEE Access,8,144,18.0,cross-border e-commerce; blockchain; cloud computing
+13,Expert Systems with Applications,7,241,34.43,neural network; demurrage rate; logical analysis of data
+14,Scientific Reports,7,35,5.0,revenue; boosting; audit
+15,IFIP Advances in Information and Communication Technology,7,37,5.29,blockchain; accountability; compliance
+16,Journal of World Trade,7,42,6.0,wto; digital trade; trade in services
+17,International Journal of Production Research,7,909,129.86,blockchain; supply chain; supply chain management
+18,Mobile Information Systems,6,41,6.83,e-commerce and technology innovations; business; economics
+19,Learning and Analytics in Intelligent Systems,6,3,0.5,cross-border e-commerce; deep learning; artificial intelligence
+20,Lecture Notes on Data Engineering and Communications Technologies,5,9,1.8,blockchain; international trade; computerized risk management

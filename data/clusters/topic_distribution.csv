@@ -1,0 +1,221 @@
+topic,count,percentage,field,subfield
+E-commerce and Technology Innovations,172,19.72,"Business, Management and Accounting",Business and International Management
+Blockchain Technology Applications and Security,117,13.42,Computer Science,Information Systems
+Maritime Ports and Logistics,28,3.21,Engineering,Industrial and Manufacturing Engineering
+Imbalanced Data Classification Techniques,22,2.52,Computer Science,Artificial Intelligence
+Supply Chain Resilience and Risk Management,21,2.41,"Business, Management and Accounting",Strategy and Management
+Global trade and economics,21,2.41,"Economics, Econometrics and Finance","General Economics, Econometrics and Finance"
+"Law, logistics, and international trade",17,1.95,"Business, Management and Accounting",Accounting
+Economic and Technological Innovation,12,1.38,"Economics, Econometrics and Finance",Economics and Econometrics
+Global Trade and Competitiveness,12,1.38,"Business, Management and Accounting",Strategy and Management
+Stock Market Forecasting Methods,12,1.38,Decision Sciences,Management Science and Operations Research
+Big Data and Business Intelligence,11,1.26,"Business, Management and Accounting",Management Information Systems
+Maritime Navigation and Safety,10,1.15,Engineering,Ocean Engineering
+Anomaly Detection Techniques and Applications,9,1.03,Computer Science,Artificial Intelligence
+Forecasting Techniques and Applications,8,0.92,Decision Sciences,Management Science and Operations Research
+Sentiment Analysis and Opinion Mining,7,0.8,Computer Science,Artificial Intelligence
+Economic and Technological Systems Analysis,7,0.8,"Business, Management and Accounting",Management of Technology and Innovation
+Business Process Modeling and Analysis,7,0.8,"Business, Management and Accounting",Management Information Systems
+Legal and Policy Issues,7,0.8,Social Sciences,Law
+"Energy, Environment, Economic Growth",6,0.69,"Economics, Econometrics and Finance",Economics and Econometrics
+Digital Transformation in Industry,6,0.69,Engineering,Industrial and Manufacturing Engineering
+World Trade Organization Law,6,0.69,Social Sciences,Political Science and International Relations
+Sustainable Supply Chain Management,6,0.69,"Business, Management and Accounting",Strategy and Management
+Rough Sets and Fuzzy Logic,6,0.69,Computer Science,Computational Theory and Mathematics
+Food Supply Chain Traceability,6,0.69,Agricultural and Biological Sciences,Food Science
+Vehicle License Plate Recognition,6,0.69,Engineering,Media Technology
+Transport and Logistics Innovations,5,0.57,Engineering,Industrial and Manufacturing Engineering
+Natural Language Processing Techniques,5,0.57,Computer Science,Artificial Intelligence
+Outsourcing and Supply Chain Management,5,0.57,"Business, Management and Accounting",Management Information Systems
+Supply Chain and Inventory Management,5,0.57,"Business, Management and Accounting",Management Information Systems
+Digital Platforms and Economics,5,0.57,"Business, Management and Accounting",Strategy and Management
+Organizational and Employee Performance,4,0.46,Computer Science,Artificial Intelligence
+Industrial Vision Systems and Defect Detection,4,0.46,Engineering,Industrial and Manufacturing Engineering
+Environmental Impact and Sustainability,4,0.46,Environmental Science,Environmental Engineering
+Financial Distress and Bankruptcy Prediction,4,0.46,"Business, Management and Accounting",Accounting
+International Business and FDI,4,0.46,"Business, Management and Accounting",Strategy and Management
+Taxation and Compliance Studies,4,0.46,"Economics, Econometrics and Finance",Economics and Econometrics
+Economic and Technological Developments in Russia,4,0.46,Social Sciences,Development
+Customer churn and segmentation,4,0.46,"Business, Management and Accounting",Marketing
+Market Dynamics and Volatility,4,0.46,"Economics, Econometrics and Finance",Economics and Econometrics
+Maritime Transport Emissions and Efficiency,4,0.46,Environmental Science,Environmental Engineering
+Data Mining Algorithms and Applications,4,0.46,Computer Science,Information Systems
+Identification and Quantification in Food,3,0.34,"Biochemistry, Genetics and Molecular Biology",Molecular Biology
+Intellectual Property and Patents,3,0.34,"Business, Management and Accounting",Management of Technology and Innovation
+Advanced Neural Network Applications,3,0.34,Computer Science,Computer Vision and Pattern Recognition
+"Global trade, sustainability, and social impact",3,0.34,"Business, Management and Accounting",Strategy and Management
+Technology Adoption and User Behaviour,3,0.34,Decision Sciences,Information Systems and Management
+Climate Change Policy and Economics,3,0.34,"Economics, Econometrics and Finance",Economics and Econometrics
+COVID-19 Pandemic Impacts,3,0.34,"Economics, Econometrics and Finance",Economics and Econometrics
+Quality and Supply Management,3,0.34,"Business, Management and Accounting",Management Information Systems
+Impact of AI and Big Data on Business and Society,3,0.34,Decision Sciences,Management Science and Operations Research
+Energy Load and Power Forecasting,3,0.34,Engineering,Electrical and Electronic Engineering
+"Law, AI, and Intellectual Property",3,0.34,Computer Science,Artificial Intelligence
+Text and Document Classification Technologies,3,0.34,Computer Science,Artificial Intelligence
+Advanced X-ray and CT Imaging,3,0.34,Engineering,Biomedical Engineering
+Evaluation and Optimization Models,3,0.34,Engineering,"Safety, Risk, Reliability and Quality"
+Spectroscopy and Chemometric Analyses,3,0.34,Chemistry,Analytical Chemistry
+"Crime, Illicit Activities, and Governance",3,0.34,Social Sciences,Sociology and Political Science
+Oil Palm Production and Sustainability,2,0.23,Environmental Science,Ecology
+Fault Detection and Control Systems,2,0.23,Engineering,Control and Systems Engineering
+Traffic Prediction and Management Techniques,2,0.23,Engineering,Building and Construction
+Handwritten Text Recognition Techniques,2,0.23,Computer Science,Computer Vision and Pattern Recognition
+Digital Economy and Transformation,2,0.23,"Business, Management and Accounting",Strategy and Management
+Arctic and Russian Policy Studies,2,0.23,Social Sciences,Sociology and Political Science
+Global Political and Economic Relations,2,0.23,Social Sciences,Political Science and International Relations
+Economic and Business Development Strategies,2,0.23,"Economics, Econometrics and Finance",Economics and Econometrics
+Medical Research and Treatments,2,0.23,Medicine,Complementary and alternative medicine
+Innovation and Socioeconomic Development,2,0.23,"Business, Management and Accounting",Business and International Management
+Digital Transformation in Law,2,0.23,"Economics, Econometrics and Finance","General Economics, Econometrics and Finance"
+Complex Network Analysis Techniques,2,0.23,Physics and Astronomy,Statistical and Nonlinear Physics
+Risk and Safety Analysis,2,0.23,Decision Sciences,"Statistics, Probability and Uncertainty"
+Natural Resources and Economic Development,2,0.23,"Economics, Econometrics and Finance","General Economics, Econometrics and Finance"
+"Energy, Environment, and Transportation Policies",2,0.23,Energy,"Renewable Energy, Sustainability and the Environment"
+Advanced Algorithms and Applications,2,0.23,Engineering,Control and Systems Engineering
+Information and Cyber Security,2,0.23,Computer Science,Information Systems
+Urban and Freight Transport Logistics,2,0.23,Engineering,Building and Construction
+Explainable Artificial Intelligence (XAI),2,0.23,Computer Science,Artificial Intelligence
+Economic Systems and Logistics Management,2,0.23,"Economics, Econometrics and Finance","General Economics, Econometrics and Finance"
+Online Learning and Analytics,2,0.23,Computer Science,Computer Science Applications
+Digitalization and Economic Development in Agriculture,2,0.23,"Business, Management and Accounting",Strategy and Management
+Economic Issues in Ukraine,2,0.23,"Economics, Econometrics and Finance","General Economics, Econometrics and Finance"
+Construction Project Management and Performance,2,0.23,Decision Sciences,Management Science and Operations Research
+Adversarial Robustness in Machine Learning,2,0.23,Computer Science,Artificial Intelligence
+Structural Integrity and Reliability Analysis,2,0.23,Engineering,Mechanical Engineering
+Business and Economic Development,2,0.23,Environmental Science,"Management, Monitoring, Policy and Law"
+Wood and Agarwood Research,2,0.23,Chemistry,Organic Chemistry
+E-Government and Public Services,2,0.23,Social Sciences,Political Science and International Relations
+Topic Modeling,2,0.23,Computer Science,Artificial Intelligence
+Data Quality and Management,2,0.23,Decision Sciences,Management Science and Operations Research
+"Business, Innovation, and Economy",2,0.23,"Economics, Econometrics and Finance",Economics and Econometrics
+Video Surveillance and Tracking Methods,2,0.23,Computer Science,Computer Vision and Pattern Recognition
+Multi-Criteria Decision Making,2,0.23,Decision Sciences,Management Science and Operations Research
+Flexible and Reconfigurable Manufacturing Systems,2,0.23,Engineering,Industrial and Manufacturing Engineering
+Innovation Diffusion and Forecasting,1,0.11,Decision Sciences,Management Science and Operations Research
+Regional resilience and development,1,0.11,"Economics, Econometrics and Finance",Economics and Econometrics
+Integrated Energy Systems Optimization,1,0.11,Engineering,Electrical and Electronic Engineering
+Reliability and Maintenance Optimization,1,0.11,Engineering,"Safety, Risk, Reliability and Quality"
+Cybersecurity and Cyber Warfare Studies,1,0.11,Social Sciences,Political Science and International Relations
+Silkworms and Sericulture Research,1,0.11,Agricultural and Biological Sciences,Insect Science
+Border Security and International Relations,1,0.11,Social Sciences,Political Science and International Relations
+AI and Big Data Applications,1,0.11,Computer Science,Information Systems
+International Development and Aid,1,0.11,Social Sciences,Development
+Recycling and Waste Management Techniques,1,0.11,Environmental Science,Industrial and Manufacturing Engineering
+Digital Marketing and Social Media,1,0.11,Social Sciences,Sociology and Political Science
+Innovation and Knowledge Management,1,0.11,"Business, Management and Accounting",Strategy and Management
+Forest ecology and management,1,0.11,Environmental Science,Nature and Landscape Conservation
+Fiscal Policy and Economic Growth,1,0.11,"Economics, Econometrics and Finance",Economics and Econometrics
+Maritime Security and History,1,0.11,Social Sciences,Transportation
+Web Data Mining and Analysis,1,0.11,Computer Science,Information Systems
+Agricultural Economics and Practices,1,0.11,Agricultural and Biological Sciences,General Agricultural and Biological Sciences
+Global Security and Public Health,1,0.11,Social Sciences,Sociology and Political Science
+Infrastructure Resilience and Vulnerability Analysis,1,0.11,Engineering,Civil and Structural Engineering
+Economic Growth and Development,1,0.11,Computer Science,Information Systems
+Transport and Economic Policies,1,0.11,"Business, Management and Accounting",Strategy and Management
+Genetically Modified Organisms Research,1,0.11,Agricultural and Biological Sciences,Plant Science
+Regional Development and Environment,1,0.11,Social Sciences,Sociology and Political Science
+Public Procurement and Policy,1,0.11,"Business, Management and Accounting",Strategy and Management
+Railway Systems and Energy Efficiency,1,0.11,Engineering,Industrial and Manufacturing Engineering
+"Computability, Logic, AI Algorithms",1,0.11,Computer Science,Computational Theory and Mathematics
+Advanced Manufacturing and Logistics Optimization,1,0.11,Engineering,Industrial and Manufacturing Engineering
+Digital Economy and Work Transformation,1,0.11,Social Sciences,Sociology and Political Science
+Privacy-Preserving Technologies in Data,1,0.11,Computer Science,Artificial Intelligence
+Remote Sensing and Land Use,1,0.11,Earth and Planetary Sciences,Atmospheric Science
+Halal products and consumer behavior,1,0.11,Social Sciences,Sociology and Political Science
+Global Financial Crisis and Policies,1,0.11,"Economics, Econometrics and Finance",Finance
+Engineering Diagnostics and Reliability,1,0.11,Engineering,Mechanics of Materials
+Family Business Performance and Succession,1,0.11,"Business, Management and Accounting",Organizational Behavior and Human Resource Management
+demographic modeling and climate adaptation,1,0.11,Decision Sciences,Management Science and Operations Research
+Saffron Plant Research Studies,1,0.11,Medicine,Oncology
+Smart Agriculture and AI,1,0.11,Agricultural and Biological Sciences,Plant Science
+Grey System Theory Applications,1,0.11,Decision Sciences,Management Science and Operations Research
+Asian Culture and Media Studies,1,0.11,Social Sciences,Cultural Studies
+Human Mobility and Location-Based Analysis,1,0.11,Social Sciences,Transportation
+China's Socioeconomic Reforms and Governance,1,0.11,Social Sciences,Political Science and International Relations
+Engineering Applied Research,1,0.11,Engineering,Civil and Structural Engineering
+International Arbitration and Investment Law,1,0.11,"Business, Management and Accounting",Strategy and Management
+Artificial Intelligence Applications,1,0.11,Computer Science,Artificial Intelligence
+Computational and Text Analysis Methods,1,0.11,Social Sciences,General Social Sciences
+Machine Learning and ELM,1,0.11,Computer Science,Artificial Intelligence
+Asian Industrial and Economic Development,1,0.11,Social Sciences,Political Science and International Relations
+Healthcare Systems and Public Health,1,0.11,Medicine,Epidemiology
+Extraction and Separation Processes,1,0.11,Engineering,Mechanical Engineering
+Coal and Coke Industries Research,1,0.11,Energy,Fuel Technology
+Corporate Taxation and Avoidance,1,0.11,"Business, Management and Accounting",Accounting
+QR Code Applications and Technologies,1,0.11,Computer Science,Information Systems
+IoT and GPS-based Vehicle Safety Systems,1,0.11,Engineering,Mechanical Engineering
+Food Chemistry and Fat Analysis,1,0.11,Agricultural and Biological Sciences,Food Science
+Cognitive Science and Mapping,1,0.11,Computer Science,Artificial Intelligence
+Infrared Target Detection Methodologies,1,0.11,Engineering,Aerospace Engineering
+Risk Management in Financial Firms,1,0.11,"Business, Management and Accounting",Accounting
+Remote Sensing and LiDAR Applications,1,0.11,Environmental Science,Environmental Engineering
+Robotic Process Automation Applications,1,0.11,Engineering,Industrial and Manufacturing Engineering
+Municipal Solid Waste Management,1,0.11,Environmental Science,Industrial and Manufacturing Engineering
+Computational Drug Discovery Methods,1,0.11,Computer Science,Computational Theory and Mathematics
+Artificial Intelligence in Law,1,0.11,Social Sciences,Political Science and International Relations
+Economic Sanctions and International Relations,1,0.11,"Economics, Econometrics and Finance",Economics and Econometrics
+Political Conflict and Governance,1,0.11,Social Sciences,Sociology and Political Science
+Text Readability and Simplification,1,0.11,Computer Science,Artificial Intelligence
+Network Security and Intrusion Detection,1,0.11,Computer Science,Computer Networks and Communications
+Natural Products and Biological Research,1,0.11,Medicine,Surgery
+"COVID-19, Geopolitics, Technology, Migration",1,0.11,Social Sciences,Political Science and International Relations
+Advanced Data Processing Techniques,1,0.11,Engineering,Control and Systems Engineering
+Sustainability and Innovation in Business,1,0.11,"Business, Management and Accounting",Management of Technology and Innovation
+Insurance and Financial Risk Management,1,0.11,"Economics, Econometrics and Finance",Economics and Econometrics
+Infrastructure Maintenance and Monitoring,1,0.11,Engineering,Civil and Structural Engineering
+Smart Grid Security and Resilience,1,0.11,Engineering,Control and Systems Engineering
+Impulse Buying and Technology Impacts,1,0.11,"Economics, Econometrics and Finance",Economics and Econometrics
+Deception detection and forensic psychology,1,0.11,Psychology,Social Psychology
+Water Quality Monitoring Technologies,1,0.11,Environmental Science,Water Science and Technology
+Technology and Data Analysis,1,0.11,Computer Science,Information Systems
+Machine Learning in Materials Science,1,0.11,Materials Science,Materials Chemistry
+Social and Intergroup Psychology,1,0.11,Social Sciences,Sociology and Political Science
+Coastal and Marine Dynamics,1,0.11,Earth and Planetary Sciences,Earth-Surface Processes
+Economic Development and Digital Transformation,1,0.11,"Economics, Econometrics and Finance","General Economics, Econometrics and Finance"
+"Gender, Violence, Rights in Latin America",1,0.11,Social Sciences,Sociology and Political Science
+Agricultural and Food Sciences,1,0.11,Agricultural and Biological Sciences,Forestry
+European Criminal Justice and Data Protection,1,0.11,Social Sciences,Political Science and International Relations
+Safety Systems Engineering in Autonomy,1,0.11,Engineering,"Safety, Risk, Reliability and Quality"
+Simulation Techniques and Applications,1,0.11,Decision Sciences,Management Science and Operations Research
+Advanced Statistical Process Monitoring,1,0.11,Decision Sciences,"Statistics, Probability and Uncertainty"
+Water and Wastewater Treatment,1,0.11,Engineering,Computational Mechanics
+Efficiency Analysis Using DEA,1,0.11,Decision Sciences,Management Science and Operations Research
+Knowledge Management and Technology,1,0.11,Decision Sciences,Management Science and Operations Research
+Taxation and Legal Issues,1,0.11,"Business, Management and Accounting",Accounting
+Nuclear and radioactivity studies,1,0.11,Engineering,"Safety, Risk, Reliability and Quality"
+Forest Insect Ecology and Management,1,0.11,Environmental Science,Ecology
+Fuzzy and Soft Set Theory,1,0.11,Decision Sciences,Management Science and Operations Research
+Complex Systems and Time Series Analysis,1,0.11,"Economics, Econometrics and Finance",Economics and Econometrics
+"Business, Education, Mathematics Research",1,0.11,"Business, Management and Accounting",Accounting
+Higher Education Governance and Development,1,0.11,Social Sciences,Political Science and International Relations
+Innovative Educational Techniques,1,0.11,Social Sciences,Education
+BIM and Construction Integration,1,0.11,Engineering,Building and Construction
+Wildlife Conservation and Criminology Analyses,1,0.11,Environmental Science,Nature and Landscape Conservation
+Medical Image Segmentation Techniques,1,0.11,Computer Science,Computer Vision and Pattern Recognition
+"Conservation, Biodiversity, and Resource Management",1,0.11,Environmental Science,Global and Planetary Change
+Electricity Theft Detection Techniques,1,0.11,Engineering,Electrical and Electronic Engineering
+Vehicle Routing Optimization Methods,1,0.11,Engineering,Industrial and Manufacturing Engineering
+Advanced Database Systems and Queries,1,0.11,Computer Science,Computer Networks and Communications
+Evaluation Methods in Various Fields,1,0.11,Environmental Science,Ecological Modeling
+Product Development and Customization,1,0.11,"Business, Management and Accounting",Management of Technology and Innovation
+Food Safety and Hygiene,1,0.11,Agricultural and Biological Sciences,Food Science
+Horticultural and Viticultural Research,1,0.11,Agricultural and Biological Sciences,Plant Science
+Education and Work Dynamics,1,0.11,Social Sciences,Demography
+Software Engineering Research,1,0.11,Computer Science,Information Systems
+Collaboration in agile enterprises,1,0.11,"Business, Management and Accounting",Management of Technology and Innovation
+RFID technology advancements,1,0.11,Engineering,Media Technology
+Manufacturing Process and Optimization,1,0.11,Engineering,Industrial and Manufacturing Engineering
+Advanced Sensor and Control Systems,1,0.11,Engineering,Control and Systems Engineering
+Geographic Information Systems Studies,1,0.11,Social Sciences,"Geography, Planning and Development"
+Data Stream Mining Techniques,1,0.11,Computer Science,Artificial Intelligence
+Service-Oriented Architecture and Web Services,1,0.11,Computer Science,Information Systems
+Auction Theory and Applications,1,0.11,Decision Sciences,Management Science and Operations Research
+Industrial Technology and Control Systems,1,0.11,Engineering,Control and Systems Engineering
+Optimization and Packing Problems,1,0.11,Engineering,Industrial and Manufacturing Engineering
+Advanced Computational Techniques and Applications,1,0.11,Computer Science,Artificial Intelligence
+Semantic Web and Ontologies,1,0.11,Computer Science,Artificial Intelligence
+Scheduling and Optimization Algorithms,1,0.11,Engineering,Industrial and Manufacturing Engineering
+Collagen: Extraction and Characterization,1,0.11,Materials Science,Biomaterials
+Tea Polyphenols and Effects,1,0.11,Medicine,Pathology and Forensic Medicine
+"Privacy, Security, and Data Protection",1,0.11,Social Sciences,Sociology and Political Science
+Capital Investment and Risk Analysis,1,0.11,"Economics, Econometrics and Finance",Finance
