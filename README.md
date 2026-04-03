@@ -54,12 +54,19 @@ The study presents a dual-stage bibliometric-systematic literature review (B-SLR
 
 ## Network Visualization
 
-The `data/networks/` directory contains GEXF files compatible with [VOSviewer](https://www.vosviewer.com/):
+The VOSviewer-native files (`map.txt` + `network.txt`) are located under `data/figures/`:
 
-- **`author_network.gexf`** — Co-authorship network (2,526 authors, 799 clusters)
-- **`network.gexf`** — Keyword co-occurrence network
+| Network | Path | Manuscript |
+|---------|------|------------|
+| Keyword co-occurrence | `data/figures/4-clustering/vosviewer/cooccurrence/` | Fig 11 |
+| Bibliographic coupling | `data/figures/5-impact/vosviewer/bibcoupling/` | Fig 7 |
+| Co-citation | `data/figures/5-impact/vosviewer/cocitation/` | Fig 6 |
+| Direct citation | `data/figures/5-impact/vosviewer/citation/` | §4.6 |
+| Co-authorship | `data/figures/9-laws/vosviewer/coauthorship/` | Fig 5 |
 
-These networks can be opened directly in VOSviewer for interactive cluster exploration.
+To visualize: open [VOSviewer](https://www.vosviewer.com/) → *File → Open* → select the `map.txt` and `network.txt` pair.
+
+GEXF network files are also available in `data/networks/` for use with Gephi or other graph tools.
 
 ## Data Collection
 
