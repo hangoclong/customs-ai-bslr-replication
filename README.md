@@ -80,5 +80,5 @@ This dataset is licensed under the [Creative Commons Attribution 4.0 Internation
 
 ## Contact
 
-- **Corresponding Author:** N. Long Ha — hangoclong@hce.edu.vn
+- **Corresponding Author:** N. Long Ha — hnlong@hueuni.edu.vn
 - **Institution:** University of Economics, Hue University, Vietnam
