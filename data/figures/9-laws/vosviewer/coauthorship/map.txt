@@ -1,0 +1,77 @@
+id	label	cluster	weight<Links>	weight<Total link strength>	x	y
+1	Ad Feelders	19	2	4	-0.357085	-0.197999
+2	Aibo Yao	24	1	2	-0.066436	0.902798
+3	Akihiko Obayashi	10	1	2	-0.349743	-0.895701
+4	"Al-Taani, A.H.M."	25	6	6	-0.502642	-0.003582
+5	"Al-Zaqeba, M.A.A."	25	6	6	-0.762821	-0.272765
+6	Alfonso Mateos	5	1	2	-0.992892	-0.017401
+7	"Almatrooshi, M.A."	25	6	6	-0.682224	-0.196525
+8	"Aloqaily, A.N."	25	6	6	-0.787806	-0.173476
+9	"Alzaqebah, M."	25	6	6	-0.354659	-0.218416
+10	Antoaneta Popova	22	3	6	-0.413594	0.537192
+11	An‐Sing Chen	20	1	2	0.758285	0.183166
+12	Ben van Rijnsoever	2	3	6	0.057854	0.738461
+13	Boriana Rukanova	2	5	15	0.382836	0.806706
+14	Changhak Yeon	13	1	2	0.889231	0.234605
+15	Chao Che	16	1	2	-0.340218	0.228680
+16	Chathumi Kavirathna	21	1	2	-0.958822	0.299031
+17	Cheng–Te Li	6	2	4	0.524923	0.766526
+18	Chongli Huang	1	2	4	0.179779	-0.660614
+19	Edvard Tijan	8	1	2	0.842878	-0.274884
+20	Elenna Dugundji	7	1	3	0.099534	-0.716915
+21	Fan Jiang	1	2	4	0.263689	-0.496967
+22	George Popov	22	3	6	-0.514417	0.641075
+23	Hao Xu	11	6	6	0.548130	-0.566565
+24	"Harsani, P."	17	3	6	-0.189591	0.764478
+25	Hennie Daniels	19	2	4	-0.608047	-0.461822
+26	Heongu Lee	13	1	2	0.725423	0.631782
+27	Hussam Juma	12	2	6	0.037728	-0.984625
+28	Ibrahim Kamel	12	2	6	-0.118801	-0.859450
+29	Ignacio González García	5	1	2	-0.502475	-0.210137
+30	"Jawarneh, S."	25	6	6	-0.663734	-0.049071
+31	Jian Zhang	3	1	4	-0.930281	-0.160164
+32	John Simeone	15	1	2	-0.507192	-0.600810
+33	Jolien Ubacht	2	2	4	0.733015	0.620940
+34	Jonathan Migeotte	2	2	4	0.533402	0.681595
+35	Kamelia Raynova	22	3	6	-0.387623	0.740596
+36	Kang Chen	18	2	4	0.589810	-0.174013
+37	Karandeep Singh	6	3	7	0.299427	0.809877
+38	Khaled Shaalan	12	2	6	-0.042958	-0.934062
+39	Kingsley Eghonghon Ukhurebor	4	1	2	-0.511842	0.913825
+40	Lei Xu	14	1	2	-0.802224	-0.672663
+41	Lin Jiang	24	1	2	-0.334310	0.894885
+42	Lincen Li	11	6	6	0.254636	-0.519926
+43	Ma Xuzhou	11	6	6	0.469891	-0.630043
+44	Marcel Molenhuis	2	3	8	0.181033	0.906856
+45	Marianne Tshomsen	11	6	6	0.559032	-0.744307
+46	Mark T. Leung	20	1	2	0.805091	-0.012926
+47	Marko van Eekelen	9	1	2	0.613195	-0.469531
+48	Mausam Budhathoki	11	6	6	0.316822	-0.298546
+49	Meeyoung Cha	6	4	11	0.366036	0.666638
+50	Mengjie Liao	3	1	4	-1.000000	0.062197
+51	Miaohui Liu	18	2	4	0.882757	-0.143927
+52	Mohamed Maher Ben Ismail	23	2	2	0.495690	-0.044881
+53	Naren Ramakrishnan	15	1	2	-0.297948	-0.885009
+54	Nikolay Aristov	7	1	3	0.413737	-0.835033
+55	Ouiem Bchir	23	2	2	0.772616	0.290155
+56	"Qahman, A.I.A."	25	6	6	-0.763006	-0.059433
+57	Qiang Zhang	16	1	2	-0.688628	0.414919
+58	Rafał Rzepka	10	1	2	-0.541359	-0.803509
+59	Rawabi Alwanin	23	2	2	0.970681	0.173564
+60	Ron Triepels	19	2	4	-0.409168	-0.477714
+61	Saša Aksentijević	8	1	2	0.758855	-0.014160
+62	Shaoqing Tian	1	2	4	0.166515	-0.789222
+63	Stefano Bromuri	9	1	2	0.394300	-0.849412
+64	"Suhendra, A."	17	3	6	-0.104158	0.715394
+65	Sujita Pandey	11	6	6	0.652741	-0.615364
+66	Sundong Kim	6	3	8	0.446168	0.759253
+67	Sungwon Park	6	2	4	0.262525	0.465827
+68	T.K.G.P. Ranasinghe	21	1	2	-0.991182	-0.045661
+69	Vеskа Gаnchеvа	22	3	6	-0.366919	0.628183
+70	Weidong Shi	14	1	2	-0.476409	-0.603381
+71	Wenbo Zhang	11	6	6	0.644988	-0.711599
+72	"Wibowo, W.C."	17	3	6	-0.051135	0.552096
+73	Wilson Nwankwo	4	1	2	-0.674661	0.777353
+74	"Wulandari, L."	17	3	6	-0.159192	0.931106
+75	Xu Xin	18	2	4	0.921320	-0.257199
+76	Yao‐Hua Tan	2	5	15	0.391627	0.869654

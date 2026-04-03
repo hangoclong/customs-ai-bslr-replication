@@ -1,0 +1,42 @@
+{
+  "verdict": "FAIR",
+  "network_mode": "hybrid",
+  "resolution": 1.0,
+  "n_clusters": 5,
+  "metrics": {
+    "modularity_q": {
+      "name": "Modularity Q",
+      "description": "PRIMARY metric for graph-based clustering (Leiden/Louvain). Measures how well the network partitions into dense clusters with sparse inter-cluster connections (Newman, 2006). Q > 0.3 indicates meaningful community structure. This is the correct quality metric for Leiden clustering, as the algorithm directly optimizes modularity on the graph.",
+      "threshold": ">= 0.30",
+      "value": 0.3679,
+      "result": "PASS"
+    },
+    "silhouette_score": {
+      "name": "Silhouette Score",
+      "description": "AUXILIARY metric — measures cluster separation in TF-IDF vector space, NOT on the graph topology used for clustering. Low values are expected when using graph-based algorithms (Leiden, Louvain) because the algorithm optimizes graph modularity, not TF-IDF distance. A low Silhouette does NOT invalidate the clustering — it simply indicates that the clusters overlap in bag-of-words space, which is common in domain-specific corpora where papers share vocabulary. Range [-1, 1]; values > 0.25 are considered good for centroid-based methods (K-Means).",
+      "threshold": ">= 0.15",
+      "value": 0.0449,
+      "result": "FAIL"
+    },
+    "cluster_size_cv": {
+      "name": "Cluster Size CV",
+      "description": "Coefficient of variation of cluster sizes. Lower values indicate more balanced clusters; CV > 1.0 signals dominant mega-clusters.",
+      "threshold": "< 1.00",
+      "value": 0.0759,
+      "result": "PASS"
+    },
+    "singleton_rate": {
+      "name": "Singleton Rate",
+      "description": "Fraction of single-paper clusters. Rates > 5% suggest over-fragmentation or noisy network edges.",
+      "threshold": "< 0.05",
+      "value": 0.0,
+      "result": "PASS"
+    }
+  },
+  "recommendations": [
+    {
+      "metric": "silhouette_score",
+      "action": "Low Silhouette is expected for graph-based clustering (Leiden) since the algorithm optimizes graph modularity, not TF-IDF distance. Modularity Q is the primary quality indicator. If a higher Silhouette is desired, consider: (1) --network-mode deep (SPECTER2 embeddings align both metrics), (2) applying a domain thesaurus (--thesaurus) to sharpen topic boundaries, or (3) reporting only Modularity Q in the paper."
+    }
+  ]
+}

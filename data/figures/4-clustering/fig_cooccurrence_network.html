@@ -1,0 +1,231 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1000px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "business", "label": "business", "shape": "dot", "size": 31.079734219269103, "title": "Keyword: Business\\nCluster: 1\\nConnections: 13"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "computer science", "label": "computer science", "shape": "dot", "size": 35.0, "title": "Keyword: Computer Science\\nCluster: 1\\nConnections: 18"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "economics", "label": "economics", "shape": "dot", "size": 22.574750830564785, "title": "Keyword: Economics\\nCluster: 1\\nConnections: 8"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "blockchain", "label": "blockchain", "shape": "dot", "size": 26.627906976744185, "title": "Keyword: Blockchain\\nCluster: 2\\nConnections: 11"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "supply chain", "label": "supply chain", "shape": "dot", "size": 22.375415282392026, "title": "Keyword: Supply Chain\\nCluster: 2\\nConnections: 8"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "smart contract", "label": "smart contract", "shape": "dot", "size": 16.262458471760798, "title": "Keyword: Smart Contract\\nCluster: 2\\nConnections: 1"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "artificial intelligence", "label": "artificial intelligence", "shape": "dot", "size": 19.31893687707641, "title": "Keyword: Artificial Intelligence\\nCluster: 3\\nConnections: 5"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "international trade", "label": "international trade", "shape": "dot", "size": 20.3156146179402, "title": "Keyword: International Trade\\nCluster: 2\\nConnections: 6"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "computer security", "label": "computer security", "shape": "dot", "size": 19.51827242524917, "title": "Keyword: Computer Security\\nCluster: 1\\nConnections: 5"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "marketing", "label": "marketing", "shape": "dot", "size": 20.04983388704319, "title": "Keyword: Marketing\\nCluster: 1\\nConnections: 5"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "machine learning", "label": "machine learning", "shape": "dot", "size": 17.591362126245848, "title": "Keyword: Machine Learning\\nCluster: 3\\nConnections: 4"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "supply chain management", "label": "supply chain management", "shape": "dot", "size": 16.3953488372093, "title": "Keyword: Supply Chain Management\\nCluster: 2\\nConnections: 2"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "finance", "label": "finance", "shape": "dot", "size": 17.45847176079734, "title": "Keyword: Finance\\nCluster: 1\\nConnections: 3"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "engineering", "label": "engineering", "shape": "dot", "size": 16.528239202657808, "title": "Keyword: Engineering\\nCluster: 1\\nConnections: 2"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "industrial organization", "label": "industrial organization", "shape": "dot", "size": 18.98671096345515, "title": "Keyword: Industrial Organization\\nCluster: 1\\nConnections: 5"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "e-commerce and technology innovations", "label": "e-commerce and technology innovations", "shape": "dot", "size": 16.461794019933556, "title": "Keyword: E-Commerce And Technology Innovations\\nCluster: 1\\nConnections: 2"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "political science", "label": "political science", "shape": "dot", "size": 17.325581395348838, "title": "Keyword: Political Science\\nCluster: 1\\nConnections: 4"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "cross-border e-commerce", "label": "cross-border e-commerce", "shape": "dot", "size": 15.79734219269103, "title": "Keyword: Cross-Border E-Commerce\\nCluster: 2\\nConnections: 2"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "traceability", "label": "traceability", "shape": "dot", "size": 15.199335548172758, "title": "Keyword: Traceability\\nCluster: 2\\nConnections: 1"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "e-commerce", "label": "e-commerce", "shape": "dot", "size": 15.132890365448505, "title": "Keyword: E-Commerce\\nCluster: 2\\nConnections: 1"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "blockchain technology applications and security", "label": "blockchain technology applications and security", "shape": "dot", "size": 16.92691029900332, "title": "Keyword: Blockchain Technology Applications And Security\\nCluster: 1\\nConnections: 4"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "data mining", "label": "data mining", "shape": "dot", "size": 16.32890365448505, "title": "Keyword: Data Mining\\nCluster: 3\\nConnections: 3"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "artificial neural network", "label": "artificial neural network", "shape": "dot", "size": 16.196013289036546, "title": "Keyword: Artificial Neural Network\\nCluster: 3\\nConnections: 3"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "logistics", "label": "logistics", "shape": "dot", "size": 15.066445182724253, "title": "Keyword: Logistics\\nCluster: 2\\nConnections: 1"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "law", "label": "law", "shape": "dot", "size": 15.066445182724253, "title": "Keyword: Law\\nCluster: 1\\nConnections: 1"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "deep learning", "label": "deep learning", "shape": "dot", "size": 15.0, "title": "Keyword: Deep Learning\\nCluster: 2\\nConnections: 1"}, {"color": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)", "highlight": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}, "hover": {"background": "rgba(0,0,0,0)", "border": "rgba(0,0,0,0)"}}, "font": {"color": "#333333"}, "id": "database transaction", "label": "database transaction", "shape": "dot", "size": 15.0, "title": "Keyword: Database Transaction\\nCluster: 1\\nConnections: 1"}]);
+                  edges = new vis.DataSet([{"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 48", "to": "computer science", "value": 48, "width": 0.8}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 30", "to": "economics", "value": 30, "width": 0.665}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 23", "to": "marketing", "value": 23, "width": 0.6125}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 20", "to": "computer security", "value": 20, "width": 0.59}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 19", "to": "finance", "value": 19, "width": 0.5825}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 18", "to": "industrial organization", "value": 18, "width": 0.575}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 17", "to": "supply chain", "value": 17, "width": 0.5675}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 15", "to": "international trade", "value": 15, "width": 0.5525}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 13", "to": "blockchain", "value": 13, "width": 0.5375}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 13", "to": "engineering", "value": 13, "width": 0.5375}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 13", "to": "political science", "value": 13, "width": 0.5375}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 13", "to": "e-commerce and technology innovations", "value": 13, "width": 0.5375}, {"color": "rgba(239,95,97,0.45)", "from": "business", "title": "Co-occurrence weight: 8", "to": "blockchain technology applications and security", "value": 8, "width": 0.5}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 26", "to": "economics", "value": 26, "width": 0.635}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 25", "to": "artificial intelligence", "value": 25, "width": 0.6275}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 24", "to": "computer security", "value": 24, "width": 0.62}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 21", "to": "marketing", "value": 21, "width": 0.5975}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 18", "to": "engineering", "value": 18, "width": 0.575}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 17", "to": "e-commerce and technology innovations", "value": 17, "width": 0.5675}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 16", "to": "supply chain", "value": 16, "width": 0.56}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 15", "to": "finance", "value": 15, "width": 0.5525}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 15", "to": "industrial organization", "value": 15, "width": 0.5525}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 14", "to": "blockchain", "value": 14, "width": 0.545}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 13", "to": "international trade", "value": 13, "width": 0.5375}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 11", "to": "political science", "value": 11, "width": 0.5225}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 10", "to": "machine learning", "value": 10, "width": 0.515}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 10", "to": "blockchain technology applications and security", "value": 10, "width": 0.515}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 9", "to": "artificial neural network", "value": 9, "width": 0.5075}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 9", "to": "data mining", "value": 9, "width": 0.5075}, {"color": "rgba(239,95,97,0.45)", "from": "computer science", "title": "Co-occurrence weight: 8", "to": "database transaction", "value": 8, "width": 0.5}, {"color": "rgba(239,95,97,0.45)", "from": "economics", "title": "Co-occurrence weight: 13", "to": "international trade", "value": 13, "width": 0.5375}, {"color": "rgba(239,95,97,0.45)", "from": "economics", "title": "Co-occurrence weight: 12", "to": "industrial organization", "value": 12, "width": 0.53}, {"color": "rgba(239,95,97,0.45)", "from": "economics", "title": "Co-occurrence weight: 11", "to": "finance", "value": 11, "width": 0.5225}, {"color": "rgba(239,95,97,0.45)", "from": "economics", "title": "Co-occurrence weight: 11", "to": "marketing", "value": 11, "width": 0.5225}, {"color": "rgba(239,95,97,0.45)", "from": "economics", "title": "Co-occurrence weight: 10", "to": "political science", "value": 10, "width": 0.515}, {"color": "rgba(239,95,97,0.45)", "from": "economics", "title": "Co-occurrence weight: 9", "to": "computer security", "value": 9, "width": 0.5075}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 29", "to": "supply chain", "value": 29, "width": 0.6575}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 27", "to": "smart contract", "value": 27, "width": 0.6425000000000001}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 24", "to": "international trade", "value": 24, "width": 0.62}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 19", "to": "supply chain management", "value": 19, "width": 0.5825}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 14", "to": "computer security", "value": 14, "width": 0.545}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 12", "to": "cross-border e-commerce", "value": 12, "width": 0.53}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 11", "to": "traceability", "value": 11, "width": 0.5225}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 10", "to": "e-commerce", "value": 10, "width": 0.515}, {"color": "rgba(102,160,210,0.45)", "from": "blockchain", "title": "Co-occurrence weight: 10", "to": "blockchain technology applications and security", "value": 10, "width": 0.515}, {"color": "rgba(102,160,210,0.45)", "from": "supply chain", "title": "Co-occurrence weight: 16", "to": "marketing", "value": 16, "width": 0.56}, {"color": "rgba(102,160,210,0.45)", "from": "supply chain", "title": "Co-occurrence weight: 12", "to": "international trade", "value": 12, "width": 0.53}, {"color": "rgba(102,160,210,0.45)", "from": "supply chain", "title": "Co-occurrence weight: 10", "to": "industrial organization", "value": 10, "width": 0.515}, {"color": "rgba(102,160,210,0.45)", "from": "supply chain", "title": "Co-occurrence weight: 10", "to": "supply chain management", "value": 10, "width": 0.515}, {"color": "rgba(102,160,210,0.45)", "from": "supply chain", "title": "Co-occurrence weight: 9", "to": "logistics", "value": 9, "width": 0.5075}, {"color": "rgba(107,190,100,0.45)", "from": "artificial intelligence", "title": "Co-occurrence weight: 19", "to": "machine learning", "value": 19, "width": 0.5825}, {"color": "rgba(107,190,100,0.45)", "from": "artificial intelligence", "title": "Co-occurrence weight: 11", "to": "international trade", "value": 11, "width": 0.5225}, {"color": "rgba(107,190,100,0.45)", "from": "artificial intelligence", "title": "Co-occurrence weight: 9", "to": "artificial neural network", "value": 9, "width": 0.5075}, {"color": "rgba(107,190,100,0.45)", "from": "artificial intelligence", "title": "Co-occurrence weight: 9", "to": "data mining", "value": 9, "width": 0.5075}, {"color": "rgba(239,95,97,0.45)", "from": "computer security", "title": "Co-occurrence weight: 9", "to": "blockchain technology applications and security", "value": 9, "width": 0.5075}, {"color": "rgba(239,95,97,0.45)", "from": "marketing", "title": "Co-occurrence weight: 13", "to": "industrial organization", "value": 13, "width": 0.5375}, {"color": "rgba(107,190,100,0.45)", "from": "machine learning", "title": "Co-occurrence weight: 10", "to": "data mining", "value": 10, "width": 0.515}, {"color": "rgba(107,190,100,0.45)", "from": "machine learning", "title": "Co-occurrence weight: 8", "to": "artificial neural network", "value": 8, "width": 0.5}, {"color": "rgba(239,95,97,0.45)", "from": "political science", "title": "Co-occurrence weight: 9", "to": "law", "value": 9, "width": 0.5075}, {"color": "rgba(102,160,210,0.45)", "from": "cross-border e-commerce", "title": "Co-occurrence weight: 8", "to": "deep learning", "value": 8, "width": 0.5}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -1500, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.05, "damping": 0.1, "avoidOverlap": 0.1}, "stabilization": {"iterations": 200, "updateInterval": 25}}, "edges": {"smooth": {"enabled": true, "type": "curvedCW", "roundness": 0.3}, "color": {"inherit": false, "opacity": 0.45}, "hoverWidth": 0, "selectionWidth": 0}, "nodes": {"shape": "dot", "borderWidth": 0, "borderWidthSelected": 0, "font": {"size": 1, "color": "rgba(0,0,0,0)"}, "shadow": {"enabled": false}}, "interaction": {"hover": true, "tooltipDelay": 100, "zoomView": true, "dragView": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            if (typeof network === 'undefined') return;
+
+            var nodeMeta = {"business": {"label": "business", "fontSize": 27, "color": "#ef5f61", "size": 31.079734219269103}, "computer science": {"label": "computer science", "fontSize": 30, "color": "#ef5f61", "size": 35.0}, "economics": {"label": "economics", "fontSize": 20, "color": "#ef5f61", "size": 22.574750830564785}, "blockchain": {"label": "blockchain", "fontSize": 23, "color": "#66a0d2", "size": 26.627906976744185}, "supply chain": {"label": "supply chain", "fontSize": 20, "color": "#66a0d2", "size": 22.375415282392026}, "smart contract": {"label": "smart contract", "fontSize": 15, "color": "#66a0d2", "size": 16.262458471760798}, "artificial intelligence": {"label": "artificial intelligence", "fontSize": 17, "color": "#6bbe64", "size": 19.31893687707641}, "international trade": {"label": "international trade", "fontSize": 18, "color": "#66a0d2", "size": 20.3156146179402}, "computer security": {"label": "computer security", "fontSize": 17, "color": "#ef5f61", "size": 19.51827242524917}, "marketing": {"label": "marketing", "fontSize": 18, "color": "#ef5f61", "size": 20.04983388704319}, "machine learning": {"label": "machine learning", "fontSize": 15, "color": "#6bbe64", "size": 17.591362126245848}, "supply chain management": {"label": "supply chain management", "fontSize": 15, "color": "#66a0d2", "size": 16.3953488372093}, "finance": {"label": "finance", "fontSize": 15, "color": "#ef5f61", "size": 17.45847176079734}, "engineering": {"label": "engineering", "fontSize": 15, "color": "#ef5f61", "size": 16.528239202657808}, "industrial organization": {"label": "industrial organization", "fontSize": 17, "color": "#ef5f61", "size": 18.98671096345515}, "e-commerce and technology innovations": {"label": "e-commerce and technology innovations", "fontSize": 15, "color": "#ef5f61", "size": 16.461794019933556}, "political science": {"label": "political science", "fontSize": 15, "color": "#ef5f61", "size": 17.325581395348838}, "cross-border e-commerce": {"label": "cross-border e-commerce", "fontSize": 15, "color": "#66a0d2", "size": 15.79734219269103}, "traceability": {"label": "traceability", "fontSize": 15, "color": "#66a0d2", "size": 15.199335548172758}, "e-commerce": {"label": "e-commerce", "fontSize": 15, "color": "#66a0d2", "size": 15.132890365448505}, "blockchain technology applications and security": {"label": "blockchain technology applications and security", "fontSize": 15, "color": "#ef5f61", "size": 16.92691029900332}, "data mining": {"label": "data mining", "fontSize": 15, "color": "#6bbe64", "size": 16.32890365448505}, "artificial neural network": {"label": "artificial neural network", "fontSize": 15, "color": "#6bbe64", "size": 16.196013289036546}, "logistics": {"label": "logistics", "fontSize": 15, "color": "#66a0d2", "size": 15.066445182724253}, "law": {"label": "law", "fontSize": 15, "color": "#ef5f61", "size": 15.066445182724253}, "deep learning": {"label": "deep learning", "fontSize": 15, "color": "#66a0d2", "size": 15.0}, "database transaction": {"label": "database transaction", "fontSize": 15, "color": "#ef5f61", "size": 15.0}};
+
+            // Helper: parse hex to RGB
+            function hexToRgb(hex) {
+                hex = hex.replace('#', '');
+                return {
+                    r: parseInt(hex.substring(0, 2), 16),
+                    g: parseInt(hex.substring(2, 4), 16),
+                    b: parseInt(hex.substring(4, 6), 16)
+                };
+            }
+
+            // === BEFORE DRAWING: Radial gradient nodes (drawn UNDER edges) ===
+            network.on("beforeDrawing", function(ctx) {
+                var positions = network.getPositions();
+
+                for (var nodeId in positions) {
+                    var pos = positions[nodeId];
+                    var meta = nodeMeta[nodeId];
+                    if (!meta) continue;
+
+                    var rgb = hexToRgb(meta.color);
+                    var radius = meta.size;
+
+                    // VOSviewer-style radial gradient: solid center → transparent edge
+                    ctx.save();
+                    var grad = ctx.createRadialGradient(
+                        pos.x, pos.y, 0,
+                        pos.x, pos.y, radius
+                    );
+                    grad.addColorStop(0.0, 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.95)');
+                    grad.addColorStop(0.5, 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.95)');
+                    grad.addColorStop(0.8, 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.80)');
+                    grad.addColorStop(1.0, 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.65)');
+
+                    ctx.beginPath();
+                    ctx.arc(pos.x, pos.y, radius, 0, 2 * Math.PI);
+                    ctx.fillStyle = grad;
+                    ctx.fill();
+                    ctx.restore();
+                }
+            });
+
+            // === AFTER DRAWING: Centered labels (drawn ON TOP of everything) ===
+            network.on("afterDrawing", function(ctx) {
+                var positions = network.getPositions();
+                var scale = network.getScale();
+
+                for (var nodeId in positions) {
+                    var pos = positions[nodeId];
+                    var meta = nodeMeta[nodeId];
+                    if (!meta) continue;
+
+                    var fontSize = meta.fontSize;
+                    if (fontSize * scale < 3) continue;
+
+                    ctx.save();
+                    ctx.font = fontSize + "px Verdana, Geneva, sans-serif";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+
+                    ctx.fillStyle = "#333333";
+                    ctx.fillText(meta.label, pos.x, pos.y);
+                    ctx.restore();
+                }
+            });
+
+            // === HOVER: bold same-color edges (not grey) ===
+            // Store original edge colors for reliable restoration
+            var edgeOrigColors = {};
+            edges.forEach(function(edge) {
+                edgeOrigColors[edge.id] = edge.color;
+            });
+
+            network.on("hoverNode", function(params) {
+                var connEdges = network.getConnectedEdges(params.node);
+                var updates = connEdges.map(function(eid) {
+                    var orig = edgeOrigColors[eid] || 'rgba(200,200,200,0.45)';
+                    // Replace last alpha value: find last comma, rebuild with 0.85
+                    var lastComma = orig.lastIndexOf(',');
+                    var bold = orig.substring(0, lastComma) + ',0.85)';
+                    return {id: eid, color: bold};
+                });
+                edges.update(updates);
+            });
+            network.on("blurNode", function(params) {
+                var connEdges = network.getConnectedEdges(params.node);
+                var updates = connEdges.map(function(eid) {
+                    var orig = edgeOrigColors[eid] || 'rgba(200,200,200,0.45)';
+                    return {id: eid, color: orig};
+                });
+                edges.update(updates);
+            });
+
+        }, 1000);
+    });
+    </script>
+    
+</body>
+</html>
