@@ -6,7 +6,7 @@
 
 This repository contains the replication dataset and supplementary materials for:
 
-> **N. L. Ha, T. H. Tran, S. H. Do, and V. P. Le**, "Artificial Intelligence in Customs Compliance and Trade Facilitation: A Bibliometric-Systematic Literature Review," *IEEE Access*, 2026.
+> **N. L. Ha, T. H. Tran, S. H. Do, and V. P. Le**, "Artificial Intelligence for Customs Compliance Management and Trade Facilitation: A Bibliometric-Systematic Literature Review," *Future Business Journal*, 2026.
 
 The study presents a dual-stage bibliometric-systematic literature review (B-SLR) of 872 peer-reviewed publications (1996–2026) on AI applications in customs compliance and international trade facilitation. A focused PRISMA-guided systematic review of 71 papers in the "Intelligent Customs Compliance" cluster provides thematic synthesis across four domains: HS code classification, fraud detection, cargo inspection, and regulatory compliance.
 
@@ -15,8 +15,8 @@ The study presents a dual-stage bibliometric-systematic literature review (B-SLR
 ```bibtex
 @article{ha2026ai_customs_bslr,
   author  = {Ha, N. Long and Tran, Thi Huong and Do, S. Huong and Le, Van Phuc},
-  title   = {Artificial Intelligence in Customs Compliance and Trade Facilitation: A Bibliometric-Systematic Literature Review},
-  journal = {IEEE Access},
+  title   = {Artificial Intelligence for Customs Compliance Management and Trade Facilitation: A Bibliometric-Systematic Literature Review},
+  journal = {Future Business Journal},
   year    = {2026},
   note    = {Under review}
 }
